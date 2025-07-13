@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS reset file -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Navbar sticky and fade JS script -->
+    <script defer src="js/nav.js"></script>
+    <!-- Reveal elements on scroll JS script -->
+    <script defer src="js/reveal-on-scroll.js"></script>
+    <!-- Lazy loading images JS script -->
+    <script defer src="js/image-loading.js"></script>
+    <!-- Tabbed section JS script-->
+    <script defer src="js/tab-component.js"></script>
+    <!-- Sldier component JS script -->
+    <script defer src="js/slider.js"></script>
+
+    <title>Bankist Website</title>
+  </head>
+  <body>
+    <!-- Website header -->
+    <header class="main-header">
+      <!-- Navigation -->
+      <nav class="navigation">
+        <!-- Bankist logo -->
+        <div class="logo">
+          <img src="img/logo.png" alt="Bankist logo" />
+        </div>
+
+        <!-- Navigation item list -->
+        <ul class="item-list">
+          <li class="list-item">
+            <a href="#features" class="link">Features</a>
+          </li>
+          <li class="list-item">
+            <a href="#operations" class="link">Operations</a>
+          </li>
+          <li class="list-item">
+            <a href="#testimonials" class="link">Testimonials</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="btn link">Open account</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Website hero part -->
+      <div class="hero">
+        <!-- Text content (left side) -->
+        <div class="text-content">
+          <h1 class="main-heading">
+            When <span class="highlighted">banking</span> meets
+            <span class="highlighted">minimalist</span>
+          </h1>
+
+          <h4 class="sub-heading">
+            A simpler banking experience for a simpler life.
+          </h4>
+
+          <a href="#" class="link-btn">Learn more ↓</a>
+        </div>
+
+        <!-- Image (right side) -->
+        <div class="hero-image">
+          <img src="img/hero.png" alt="Bankist items" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Features section -->
+    <section class="features" id="features">
+      <!-- Section header -->
+      <header class="section-header">
+        <h3 class="sub-heading">Features</h3>
+        <h2 class="section-heading">
+          Everything you need in a modern bank and more.
+        </h2>
+      </header>
+
+      <div class="features-content">
+        <!-- First row -->
+        <div class="features-image">
+          <img
+            src="img/digital-lazy.jpg"
+            data-src="img/digital.jpg"
+            alt="Our application"
+          />
+        </div>
+
+        <div class="features-block">
+          <div class="icon">
+            <i class="fa-solid fa-desktop"></i>
+          </div>
+          <h3 class="features-heading">100% digital bank</h3>
+          <p class="features-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias
+            sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam
+            debitis ducimus.
+          </p>
+        </div>
+
+        <!-- Second row -->
+        <div class="features-block">
+          <div class="icon">
+            <i class="fa-solid fa-seedling"></i>
+          </div>
+          <h3 class="features-heading">Watch your money grow</h3>
+          <p class="features-text">
+            Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
+            inventore ab? Nulla incidunt eius numquam sequi iste pariatur
+            quibusdam!
+          </p>
+        </div>
+
+        <div class="features-image">
+          <img
+            src="img/grow-lazy.jpg"
+            data-src="img/grow.jpg"
+            alt="Growing plant"
+          />
+        </div>
+
+        <!-- Third row -->
+        <div class="features-image">
+          <img src="img/card-lazy.jpg" data-src="img/card.jpg" alt="Our card" />
+        </div>
+
+        <div class="features-block">
+          <div class="icon">
+            <i class="fa-solid fa-credit-card"></i>
+          </div>
+          <h3 class="features-heading">Free debit card included</h3>
+          <p class="features-text">
+            Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
+            eveniet consequatur odit quam quos possimus assumenda dicta fuga
+            inventore ab.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Opeerations sectioon -->
+    <section class="operations" id="operations">
+      <!-- Section header -->
+      <header class="section-header">
+        <h3 class="sub-heading">Operations</h3>
+        <h2 class="section-heading">
+          Everything as simple as possible, but no simpler.
+        </h2>
+      </header>
+
+      <!-- Operations content -->
+      <div class="operations-content">
+        <div class="operations-buttons">
+          <button
+            class="operation operation-transfer operation-active"
+            id="transfer"
+          >
+            <span>01</span>Instant Transfers
+          </button>
+          <button class="operation operation-loan" id="loan">
+            <span>02</span>Instant Loans
+          </button>
+          <button class="operation operation-closing" id="closing">
+            <span>03</span>Instant Closing
+          </button>
+        </div>
+
+        <div class="operation-descriptions">
+          <!-- Transfer description -->
+          <div class="description transfer-description">
+            <div class="icon">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+            <h3 class="description-heading">
+              Tranfser money to anyone, instantly! No fees, no BS.
+            </h3>
+            <p class="description-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <!-- Loan description -->
+          <div class="description loan-description hidden">
+            <div class="icon">
+              <i class="fa-solid fa-house"></i>
+            </div>
+            <h3 class="description-heading">
+              Buy a home or make your dreams come true, with instant loans.
+            </h3>
+            <p class="description-text">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </p>
+          </div>
+
+          <!-- Closing description -->
+          <div class="description closing-description hidden">
+            <div class="icon">
+              <i class="fa-solid fa-user-xmark"></i>
+            </div>
+            <h3 class="description-heading">
+              No longer need your account? No problem! Close it instantly.
+            </h3>
+            <p class="description-text">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials section -->
+    <section class="testimonials" id="testimonials">
+      <!-- Section header -->
+      <header class="section-header">
+        <h3 class="sub-heading">Not sure yet?</h3>
+        <h2 class="section-heading">
+          Millions of Bankists are already making their lifes simpler.
+        </h2>
+      </header>
+
+      <!-- Testimonials content -->
+      <div class="slider">
+        <!-- First testimonial -->
+        <div class="slide">
+          <div class="testimonial">
+            <h3 class="testimonial-heading">Best financial decision ever!</h3>
+            <blockquote class="testimonial-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusantium quas quisquam non? Quas voluptate nulla minima
+              deleniti optio ullam nesciunt, numquam corporis et asperiores
+              laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+              id alias reiciendis, perferendis facere pariatur dolore veniam
+              autem esse non voluptatem saepe provident nihil molestiae.
+            </blockquote>
+
+            <div class="testimonial-author">
+              <div class="image">
+                <img src="img/user-1.jpg" alt="Person" />
+              </div>
+              <div class="author-info">
+                <p class="author-name">Aarav Lynn</p>
+                <p class="author-location">San Francisco, USA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second testimonial -->
+        <div class="slide">
+          <div class="testimonial">
+            <h3 class="testimonial-heading">
+              The last step to becoming a complete minimalist
+            </h3>
+            <blockquote class="testimonial-text">
+              Quisquam itaque deserunt ullam, quia ea repellendus provident,
+              ducimus neque ipsam modi voluptatibus doloremque, corrupti
+              laborum. Incidunt numquam perferendis veritatis neque repellendus.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+              deserunt exercitationem deleniti.
+            </blockquote>
+
+            <div class="testimonial-author">
+              <div class="image">
+                <img src="img/user-2.jpg" alt="Person" />
+              </div>
+              <div class="author-info">
+                <p class="author-name">Miyah Miles</p>
+                <p class="author-location">London, UK</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third testimonial -->
+        <div class="slide">
+          <div class="testimonial">
+            <h3 class="testimonial-heading">
+              Finally free from old-school banks
+            </h3>
+            <blockquote class="testimonial-text">
+              Debitis, nihil sit minus suscipit magni aperiam vel tenetur
+              incidunt commodi architecto numquam omnis nulla autem,
+              necessitatibus blanditiis modi similique quidem. Odio aliquam
+              culpa dicta beatae quod maiores ipsa minus consequatur error sunt,
+              deleniti saepe aliquid quos inventore sequi. Necessitatibus id
+              alias reiciendis, perferendis facere.
+            </blockquote>
+
+            <div class="testimonial-author">
+              <div class="image">
+                <img src="img/user-3.jpg" alt="Person" />
+              </div>
+              <div class="author-info">
+                <p class="author-name">Francisco Gomes</p>
+                <p class="author-location">Lisbon, Portugal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="slide-btn slide-btn-left">←</button>
+        <button class="slide-btn slide-btn-right">→</button>
+
+        <div class="dots">
+          <!-- <div class="dot dot-active">&nbsp;</div>
+          <div class="dot">&nbsp;</div>
+          <div class="dot">&nbsp;</div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Open Account section -->
+    <section class="open-account">
+      <div class="container">
+        <h2 class="heading">
+          The best day to join Bankist was one year ago. The second best is
+          today!
+        </h2>
+
+        <a href="#" class="btn">Open your free account today!</a>
+      </div>
+    </section>
+
+    <!-- Website Footer -->
+    <footer class="main-footer">
+      <ul class="nav-items">
+        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="#">Pricing</a></li>
+        <li class="nav-item"><a href="#">Terms of Use</a></li>
+        <li class="nav-item"><a href="#">Privacy Policy</a></li>
+        <li class="nav-item"><a href="#">Careers</a></li>
+        <li class="nav-item"><a href="#">Blog</a></li>
+        <li class="nav-item"><a href="#">Contact Us</a></li>
+      </ul>
+
+      <div class="logo">
+        <img src="img/icon.png" alt="Bankist logo" />
+      </div>
+
+      <p class="copyright">
+        © Copyright by
+        <a href="https://twitter.com/jonasschmedtman">Jonas Schmedtmann</a>. Use
+        for learning or your portfolio. Don't use to teach. Don't claim as your
+        own product.
+      </p>
+    </footer>
+
+    <!-- Modal window -->
+    <div class="modal"></div>
+  </body>
+</html>
