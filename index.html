@@ -28,6 +28,8 @@
     <script defer src="js/tab-component.js"></script>
     <!-- Sldier component JS script -->
     <script defer src="js/slider.js"></script>
+    <!-- Modal window component JS script -->
+    <script defer src="js/modal.js"></script>
 
     <title>Bankist Website</title>
   </head>
@@ -53,7 +55,7 @@
             <a href="#testimonials" class="link">Testimonials</a>
           </li>
           <li class="list-item">
-            <a href="#" class="btn link">Open account</a>
+            <a href="#" class="btn link open-modal">Open account</a>
           </li>
         </ul>
       </nav>
@@ -341,7 +343,7 @@
           today!
         </h2>
 
-        <a href="#" class="btn">Open your free account today!</a>
+        <a href="#" class="btn open-modal">Open your free account today!</a>
       </div>
     </section>
 
@@ -370,6 +372,38 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="modal"></div>
+    <div class="modal visually-hidden">
+      <!-- Close button -->
+      <button class="close-modal">×</button>
+
+      <!-- Modal heading -->
+      <h2 class="modal-heading">
+        Open your bank account in just
+        <span class="highlighted">5 minutes</span>
+      </h2>
+
+      <!-- Modal form -->
+      <form class="modal-form">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" id="firstName" />
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName" id="lastName" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <button type="submit" class="btn">Next step →</button>
+      </form>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay visually-hidden"></div>
   </body>
 </html>
